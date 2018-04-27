@@ -39,7 +39,7 @@ class Command(BaseCommand):
 
                     if 'location' in d and d['location'] is not None and d['location'] != '':
                         loc = d['location']
-                        location = Location.objects.get(lat=loc['lat'], lon=loc['lon'])
+                        location = Location.objects.filter(lat=loc['lat'], lon=loc['lon']).first()
                     else:
                         location = None
 
