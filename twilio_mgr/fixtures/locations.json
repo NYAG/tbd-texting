@@ -6846,8 +6846,8 @@
 		"pk": 623,
 		"fields": {
 			"name": "Marra’s Pharmacy",
-			"longitude": -73.700428,
-			"latitude": 42.771617,
+			"lon": -73.700428,
+			"lat": 42.771617,
 			"type": "Pharmacy",
 			"address": "1217 Remsen St, Cohoes, NY 12407"
 		}
