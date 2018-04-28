@@ -25,12 +25,12 @@ def twilio_send(number, message):
 
     return False
 
-def sendgrid_send(email, message):
+def sendgrid_send(email, message, title="Thank you for signing up for a take-back reminder."):
 
     sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('SENDGRID_API_KEY'))
     from_email = Email("Clear Your Cabinet New York <do-not-reply@clearyourcabinet.ag.ny.gov>")
     to_email = Email(email)
-    subject = "Thank you for signing up for a take-back reminder."
+    subject = title
     content = Content("text/html", message)
     mail = Mail(from_email, subject, to_email, content)
     response = sg.client.mail.send.post(request_body=mail.get())

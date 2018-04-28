@@ -60,24 +60,26 @@ class Command(BaseCommand):
         targets = EmailReminder.objects.filter(cancelled=False, reminder_sent=False)
         message = Message.objects.get(keyword='DAY_OF_TBD_EMAIL')
         message_without_loc = Message.objects.get(keyword='DAY_OF_TBD_EMAIL_NO_LOCATION')
-
+        title = ""
         for email in targets:
             try:
 
                 if email.location is None:
                     true_msg = message_without_loc.message
+                    title = message_without_loc.subject
                 else:
                     # Prepare Message
                     true_msg = re.sub('\[ADDRESS\]', email.location.address, message.message)
+                    title = message.subject
 
-                self.stdout.write(self.style.SUCCESS('Sending Message "%s" to "%s"' % (true_msg, email.email)))
+                self.stdout.write(self.style.SUCCESS('Sending Message "%s" to "%s"' % (true_msg, title)))
                 # else:
                 #     # Prepare Message
                 #     true_msg = re.sub('\[ADDRESS\]', email.location.address, message.message)
                 #
 
                 # 1. Send Email via sendgrid
-                sender.sendgrid_send(email.email, true_msg)
+                sender.sendgrid_send(email.email, true_msg, title)
 
                 # 2. Mark Email as intro'd
                 email.reminder_sent = True
