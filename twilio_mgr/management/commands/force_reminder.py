@@ -95,5 +95,5 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         print("Sending Reminders")
-        # self.sms_reminder()
+        self.sms_reminder()
         self.email_reminder()
