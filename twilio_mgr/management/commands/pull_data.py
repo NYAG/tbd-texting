@@ -52,7 +52,7 @@ class Command(BaseCommand):
 
             return True
         except Exception as e:
-            raise CommandError('Something Happened while processing site - %s' % (str(e)))
+            print('Something Happened while processing site - %s' % (str(e)))
             return False
 
         return False
@@ -101,7 +101,7 @@ class Command(BaseCommand):
 
             return True
         except Exception as e:
-            raise CommandError('Something Happened while processing site - %s' % (str(e)))
+            print('Something Happened while processing site - %s' % (str(e)))
             return False
 
         return False
