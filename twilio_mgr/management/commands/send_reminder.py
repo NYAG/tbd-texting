@@ -19,11 +19,17 @@ class Command(BaseCommand):
         now=datetime.datetime.now()
         targets = SmsNumber.objects.filter(cancelled=False, reminder_sent=False, reminder_date__lte=now)
         message = Message.objects.get(keyword='DAY_OF_TBD_SMS')
+        message_without_loc = Message.objects.get(keyword='DAY_OF_TBD_SMS_NO_LOCATION')
 
         for sms in targets:
             try:
 
-                true_msg = message.message
+                if sms.location is None:
+                    true_msg = message_without_loc.message
+                else:
+                    # Prepare Message
+                    true_msg = re.sub('\[ADDRESS\]', sms.location.address, message.message)
+                    self.stdout.write(self.style.SUCCESS('Sending Message "%s" to "%s"' % (true_msg, sms.sms)))
 
                 # 1. Send Message Twilio
                 send_success = sender.twilio_send(sms.sms, true_msg)
@@ -53,12 +59,17 @@ class Command(BaseCommand):
         now=datetime.datetime.now()
         targets = EmailReminder.objects.filter(cancelled=False, reminder_sent=False, reminder_date__lte=now)
         message = Message.objects.get(keyword='DAY_OF_TBD_EMAIL')
+        message_without_loc = Message.objects.get(keyword='DAY_OF_TBD_EMAIL_NO_LOCATION')
 
         for email in targets:
             try:
-                # if email.location is None:
-                true_msg = message.message
-                self.stdout.write(self.style.SUCCESS('Sending Message "%s" to "%s"' % (true_msg, email.email)))
+
+                if email.location is None:
+                    true_msg = message_without_loc.message
+                else:
+                    # Prepare Message
+                    true_msg = re.sub('\[ADDRESS\]', email.location.address, message.message)
+                    self.stdout.write(self.style.SUCCESS('Sending Message "%s" to "%s"' % (true_msg, email.email)))
                 # else:
                 #     # Prepare Message
                 #     true_msg = re.sub('\[ADDRESS\]', email.location.address, message.message)
