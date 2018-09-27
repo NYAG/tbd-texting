@@ -21,7 +21,7 @@
     "fields": {
       "subject": "Thank you for signing up for a take-back reminder.",
       "keyword": "WELCOME_EMAIL",
-      "message": "Friend --<br/><br/>America’s opioid crisis is a national emergency. Thank you for taking an incredibly important step to address the crisis in New York.<br/><br/>The next National Prescription Drug Take Back Day will be in Fall 2018. We will send you a reminder so you can find the locations closest to you and make a plan.<br/><br/> <i>Clear Your Cabinet is an initiative of The New York Attorney General.</i><br/><br/> <img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
+      "message": "Friend --<br/><br/>America’s opioid crisis is a national emergency. Thank you for taking an incredibly important step to address the crisis in New York.<br/><br/>The next National Prescription Drug Take Back Day will be on October 27th. We will send you a reminder so you can find the locations closest to you and make a plan.<br/><br/> <i>Clear Your Cabinet is an initiative of The New York Attorney General.</i><br/><br/> <img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
     }
   }
   ,
@@ -31,7 +31,7 @@
     "fields": {
       "subject": "Thank you for signing up for a take-back reminder.",
       "keyword": "WELCOME_EMAIL_NO_LOCATION",
-      "message": "Friend --<br/><br/>America’s opioid crisis is a national emergency. Thank you for taking an incredibly important step to address the crisis in New York.<br/><br/>The next National Prescription Drug Take Back Day will be in Fall 2018. We will send you a reminder so you can find the locations closest to you and make a plan.<br/><br/> <i>Clear Your Cabinet is an initiative of The New York Attorney General.</i><br/><br/> <img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
+      "message": "Friend --<br/><br/>America’s opioid crisis is a national emergency. Thank you for taking an incredibly important step to address the crisis in New York.<br/><br/>The next National Prescription Drug Take Back Day will be on October 27th. We will send you a reminder so you can find the locations closest to you and make a plan.<br/><br/> <i>Clear Your Cabinet is an initiative of The New York Attorney General.</i><br/><br/> <img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
     }
   },
   {
