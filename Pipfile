@@ -24,6 +24,7 @@ sendgrid = "*"
 redis = "*"
 rq = "*"
 apscheduler = "*"
+pyinvoke = "*"
 
 [requires]
 python_version = "3.6"
