@@ -1,7 +1,7 @@
 # encoding=utf8
 
 from apscheduler.schedulers.blocking import BlockingScheduler
-from tasks import maintask
+import tasks.maintask as maintask
 import time
 from rq import Queue
 from worker import conn
