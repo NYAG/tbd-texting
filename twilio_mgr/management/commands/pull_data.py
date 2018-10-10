@@ -44,7 +44,7 @@ class Command(BaseCommand):
                         location = None
 
                     try:
-                        smsNumber = SmsNumber.objects.get(sms=number)
+                        smsNumber = SmsNumber.objects.get(sms=number, location=location)
                     except SmsNumber.DoesNotExist:
                         #create new number
                         smsNumber = SmsNumber(sms=number, location=location, reminder_date=upcoming_tbd, firebase_id=key)
