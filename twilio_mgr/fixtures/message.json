@@ -31,7 +31,7 @@
     "fields": {
       "subject": "Thank you for signing up for a take-back reminder.",
       "keyword": "WELCOME_EMAIL_NO_LOCATION",
-      "message": "Friend --<br/><br/>America’s opioid crisis is a national emergency. Thank you for taking an incredibly important step to address the crisis in New York.<br/><br/>The next National Prescription Drug Take Back Day will be on October 27th. We will send you a reminder so you can find the locations closest to you and make a plan.<br/><br/> <i>Clear Your Cabinet is an initiative of The New York Attorney General.</i><br/><br/> <img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
+      "message": "Friend --<br/><br/>America’s opioid crisis is a national emergency. Thank you for taking an incredibly important step to address the crisis in New York.<br/><br/>The next National Prescription Drug Take Back Day will be on October 27th. We will send you a reminder so you can find the locations closest to you and make a plan.<br/><br/><i>Clear Your Cabinet is an initiative of The New York Attorney General.</i><br/><br/> <img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
     }
   },
   {
@@ -65,7 +65,7 @@
     "fields": {
       "subject": "Reminder: National Prescription Drug Take Back Day is Today",
       "keyword": "DAY_OF_TBD_EMAIL_NO_LOCATION",
-      "message": "Friend --<br/><br/>Today is National Prescription Drug Take Back Day from 10 AM to 2 PM. New Yorkers from across the state will be heading to drop-off sites near their homes or workplaces to safely dispose of unused medication.<br/><br/><a href='clearyourcabinet.com'>Click here to find your nearest drop-off site</a>.<br/><br/>Once you’ve found a nearby site, we recommend calling them before you head out to confirm their availability and hours.<br/><br/>Thank you for clearing your cabinet. Together we can make a crucial difference in combatting the opioid crisis in New York State.<br/><br/><i>Clear Your Cabinet is an initiative of The New York Attorney General.<i><br/><br/><img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
+      "message": "Friend --<br/><br/>Today is National Prescription Drug Take Back Day from 10 AM to 2 PM. New Yorkers from across the state will be heading to drop-off sites near their homes or workplaces to safely dispose of unused medication.<br/><br/><a href='clearyourcabinet.com'>Click here to find your nearest drop-off site</a>.<br/><br/>Once you’ve found a nearby site, we recommend calling them before you head out to confirm their availability and hours. Some sites may have changed from the time we last confirmed participating locations.<br/><br/>Thank you for clearing your cabinet. Together we can make a crucial difference in combatting the opioid crisis in New York State.<br/><br/><i>Clear Your Cabinet is an initiative of The New York Attorney General.</i><br/><br/><img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
     }
   },
   {
@@ -73,7 +73,7 @@
     "pk": 9,
     "fields": {
       "keyword": "DAY_OF_TBD_SMS",
-      "message": "Today is Prescription Drug Take Back Day from 10 AM to 2 PM. You requested a reminder for: [ADDRESS]. Reply STOP to cancel txt msgs."
+      "message": "Today is Prescription Drug Take Back Day from 10 AM to 2 PM. You requested a reminder for: [ADDRESS]. You should call to confirm this location’s participation before heading out. Reply STOP to cancel txt msgs."
     }
   },
   {
@@ -82,7 +82,7 @@
     "fields": {
       "subject": "Reminder: National Prescription Drug Take Back Day is Today",
       "keyword": "DAY_OF_TBD_EMAIL",
-      "message": "Friend --<br/><br/>Today is National Prescription Drug Take Back Day from 10 AM to 2 PM. New Yorkers from across the state will be heading to drop-off sites near their homes or workplaces to safely dispose of unused medication.<br/><br/>You requested a reminder for the following address:<br/>[ADDRESS]<br/><br/><a href='clearyourcabinet.com'>Click here to visit ClearYourCabinet.com</a>.<br/><br/>We recommend calling them before you head out to confirm their availability and hours.<br/><br/>Thank you for clearing your cabinet. Together we can make a crucial difference in combatting the opioid crisis in New York State.<br/><br/><i>Clear Your Cabinet is an initiative of The New York Attorney General.<i><br/><br/><img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
+      "message": "Friend --<br/><br/>Today is National Prescription Drug Take Back Day from 10 AM to 2 PM. New Yorkers from across the state will be heading to drop-off sites near their homes or workplaces to safely dispose of unused medication.<br/><br/>You requested a reminder for the following address:<br/>[ADDRESS]<br/><br/><a href='clearyourcabinet.com'>Click here to visit ClearYourCabinet.com</a>.<br/><br/>We recommend calling them before you head out to confirm their availability and hours. Some sites may have changed from the time we last confirmed participating locations.<br/><br/>Thank you for clearing your cabinet. Together we can make a crucial difference in combatting the opioid crisis in New York State.<br/><br/><i>Clear Your Cabinet is an initiative of The New York Attorney General.</i><br/><br/><img src='https://clearyourcabinet.ag.ny.gov/static/media/hero-image.bd136837.png' width='200px' height='auto'/>"
     }
   }
 ]
